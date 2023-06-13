@@ -1,0 +1,126 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Flutter/Dart specific files
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub/
+**/.pub-cache/
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+/build/
+
+# IntelliJ IDEA / Android Studio
+**/*.iml
+**/*.ipr
+**/*.iws
+.idea/
+.android/
+.vscode/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Flutter analysis and linting
+**/analysis_options.yaml
+**/*.log
+
+# Flutter build cache
+.dart_tool/flutter_build/
+
+# Android related files
+**/android/**/gradle-wrapper.jar
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/gradlew
+**/android/gradlew.bat
+
+# iOS/Xcode related files
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+*/ios/**/.tags
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/.fastlane/
+
+# Flutter plugin symlinks
+**/.plugin_symlinks/
+
+# Flutter plugin generated files
+**/.generated/
+
+# Web related files
+**/web/.generated/
+**/web/assets/
+**/web/fonts/
+**/web/packages/
+**/web/favicon.png
+**/web/flutter_service_worker.js
+**/web/flutter_service_worker.js.map
+
+# Dart SDK
+**/bin/cache/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
