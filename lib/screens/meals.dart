@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mac_meals/widgets/meal_item.dart';
 
 import '../models/meal.dart';
 
@@ -36,9 +37,7 @@ class MealsScreen extends StatelessWidget {
     if (meals.isNotEmpty) {
       content = ListView.builder(
           itemCount: meals.length,
-          itemBuilder: (ctx, index) => Text(
-                meals[index].title,
-              ));
+          itemBuilder: (ctx, index) => MealItem(meal: meals[index]));
     }
     return Scaffold(
       appBar: AppBar(

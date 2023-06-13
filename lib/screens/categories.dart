@@ -3,13 +3,19 @@ import 'package:mac_meals/data/dummy_data.dart';
 import 'package:mac_meals/screens/meals.dart';
 import 'package:mac_meals/widgets/category_grid_items.dart';
 
+import '../models/category.dart';
+
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
 
-  void _selectCategory(BuildContext context) {
+  void _selectCategory(BuildContext context, Category category) {
+    final filteredMeals = dummyMeals
+        .where((meal) => meal.categories.contains(category.id))
+        .toList();
+
     Navigator.of(context).push(MaterialPageRoute(
         builder: (ctx) =>
-            const MealsScreen(title: 'Some title...', meals: [])));
+            MealsScreen(title: category.title, meals: filteredMeals)));
   }
 
   @override
@@ -31,7 +37,7 @@ class CategoriesScreen extends StatelessWidget {
             CategorygGridItem(
               category: category,
               onSelectCategory: () {
-                _selectCategory(context);
+                _selectCategory(context, category);
               },
             )
         ],
