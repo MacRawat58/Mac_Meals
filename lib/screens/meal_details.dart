@@ -10,14 +10,27 @@ class MealDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(meal.title),
-        ),
-        body: Image.network(
-          meal.imageUrl,
-          height: 300,
-          width: double.infinity,
-          fit: BoxFit.cover,
-        ));
+      appBar: AppBar(
+        title: Text(meal.title),
+      ),
+      body: Column(
+        children: [
+          Image.network(
+            meal.imageUrl,
+            height: 300,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(
+            height: 14,
+          ),
+          Text('Ingredients',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(color: Theme.of(context).colorScheme.onBackground)),
+        ],
+      ),
+    );
   }
 }
