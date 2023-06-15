@@ -33,6 +33,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
     _veganFilterSet = widget.currentFilters[Filter.vegan]!;
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
