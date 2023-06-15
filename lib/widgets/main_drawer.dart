@@ -30,7 +30,7 @@ class MainDrawer extends StatelessWidget {
               const SizedBox(
                 width: 18,
               ),
-              Text('Cooking up!',
+              Text('Mac Meals!',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                       )),
